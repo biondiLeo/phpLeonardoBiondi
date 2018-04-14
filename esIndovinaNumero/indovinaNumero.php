@@ -67,9 +67,9 @@
        ?>
         <center><b>Inserisci il numero</b></center></br>
         <form action = "" method = "get">
-          <center><input type = "hidden" name = "randomNumber" value = <?php echo $nRandom; ?> </center>
-          <center><input type = "hidden" name = "tentativi" value = <?php echo $nTentativi; ?> </center>
-          <center><input id = "textBox" type = "text" name = "numero"></center></br>
+          <center><input type = "hidden" name = "randomNumber" value = <?php echo $nRandom; ?> /></center>
+          <center><input type = "hidden" name = "tentativi" value = <?php echo $nTentativi; ?> /></center>
+          <center><input id = "textBox" type = "text" name = "numero"/></center></br>
           <center><button id = "btnConferma" type = "submit" name="bottoneConferma">Conferma</button></center>
         </form></br>
        <?php
@@ -84,8 +84,8 @@
           ?>
         <center><b>Inserisci il numero</b></center></br>
         <form action = "" method = "get">
-          <center><input type = "hidden" name = "randomNumber" value = <?php echo $nRandom; ?> </center>
-          <center><input type = "hidden" name = "tentativi" value = <?php echo $nTentativi; ?> </center>
+          <center><input type = "hidden" name = "randomNumber" value = <?php echo $nRandom; ?> /></center>
+          <center><input type = "hidden" name = "tentativi" value = <?php echo $nTentativi; ?> /></center>
           <center><input id = "textBox" type = "text" name = "numero"></center></br>
           <center><button id = "btnConferma" type = "submit" name="bottoneConferma">Conferma</button></center>
         </form></br>

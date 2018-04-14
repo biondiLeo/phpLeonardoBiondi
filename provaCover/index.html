@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css" rel="stylesheet" type="text/css"> 
+      <link href="style.css" rel="stylesheet" type="text/css">
+    
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+  </head>
+  
+  <body>
+    
+    <header class="header clearfix">
+      <a href="" class="header__logo">Logo</a>
+      <a href="" class="header__icon-bar">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <ul class="header__menu animate">
+        <li class="header__menu__item"><a href="">Item</a></li>
+        <li class="header__menu__item"><a href="">Item</a></li>
+        <li class="header__menu__item"><a href="">Item</a></li>
+        <li class="header__menu__item"><a href="">Item</a></li>
+      </ul>
+    </header>
+    
+    <section class="cover">
+      <div class="cover__filter">
+        
+      </div>
+      <div class="cover__caption">
+        <div class="cover__caption__copy">
+          <h1><b>Primary message of the Home</b></h1>
+          <h3>Subtitle of the Home</h3>
+          <a href="" class="button">Call to action</a>
+        </div>
+      </div>
+    </section>
+  
+    
+    
+      <script>
+        $(document).ready(function(){
+          
+          $(".header__icon-bar").click(function(e){
+            
+            $(".header__menu").toggleClass('is-open');
+            e.preventDefault();
+            
+          });
+        });
+      </script>
+    
+  </body>
+</html>

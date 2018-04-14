@@ -1,0 +1,57 @@
+    html,body{height: 100%;}
+      body{background: #eee;}  
+
+      .navbar-brand,
+      .navbar-nav > li > a{
+        height:60px;
+        line-height:30px;
+      }
+      a{
+        float:left;
+      }
+  
+  
+       #panelHeading{
+          background-color: blue;
+        }
+        #panelFooter{
+          background-color: green;
+        }
+        #titolo{
+          color: white;
+        }
+      .row{
+          margin-left: 8%;
+       }
+      .form-control {
+        height: 32px;
+        padding: 6px 12px;
+        color: #333333;
+        width: 139%;
+        border-radius: 0;
+       }
+      .col-lg-4  { width: 33.33333333333333%;  }
+      .col-lg-6  { width: 50%; }
+       #pannello{
+          width: 419px;
+          margin-top: 50px;
+       }
+       #btnAnnulla{
+          border-radius: 5px;
+          border-color: #9E9C9C;
+          height: 30px;
+          width: 89px;
+          color: white;
+          background-color: #9E9C9C;
+        }
+        #btnLogin{
+          border-radius: 20px;
+          border-color: #9E9C9C;
+          color: white;
+          background-color: blue;
+          width: 60%;
+          height: 35px;
+        }
+        #Contenitore{
+          margin: 50px;
+        }
