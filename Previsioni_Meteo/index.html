@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <link href="style.css" rel="stylesheet" type="text/css"> 
+      
+    
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <style>
+      .mygrid-wrapper-div {
+    
+    height: 728px;
+    overflow: auto;
+    
+}
+    /* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+    
+      
+      
+     
+      #pannelloMeteo{
+        width: 720px;
+        
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">PREVISIONI METEO</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+     
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+    <section class="cover">
+      <div class="cover__filter"></div>
+      <div class="cover__caption">
+        <div class="cover__caption__copy">
+            
+           
+        </div>
+      </div>
+    </section>
+    
+    <div id="contenitore" class="page mygrid-wrapper-div">
+       <center>
+         <div style="margin-top: -395px;">
+           <img src="https://mobile.ilmeteo.it/img/app-plus-icon-2.png" alt="icon" style="margin-right: 617px;" height="100" width="100">
+           <img src="https://mobile.ilmeteo.it/img/app-plus-icon-2.png" alt="icon" style="margin-top: -123px; margin-left: 618px;" height="100" width="100">
+           <div class="panel panel-default" style="width: 500px;margin-top: -118px;">
+             <div class="panel-heading" id="panelHeading" style="background-color: cornflowerblue;"><center><h3 id="titolo" style="color: white;"><b>Weather / Forecast </b></br> <p style="font-size:17px;">by openweathermap.org </p></h3></center></div>
+           </div>
+           
+            <div class="container" id="Contenitore" style="margin-top:100px; margin-left:-3px;">
+              <div style="width: 500px; margin-left:-446px;" class="panel panel-danger" id="pannelloMeteo">
+                <div class="panel-heading" id="panelHeading"><h3 id="titolo"><b> Weather</b></h3></div>
+                <div class="panel-body" id="panelBody">
+                  <div id="infoLuogo">
+                     
+                  </div>
+                  <div id="contenitoreTabella">
+                     
+                  </div>
+                </div>
+                <div class="panel-footer" id ="panelFooter">
+                  <div style="margin-left: 70px;" class="col-md-2">
+                    <div style="width: 225px;" class="input-group">
+                      <input type="text" class="form-control" id="citta" placeholder="Location search by name">
+                      <div class="input-group-btn">
+                        <button style="background-color:deepskyblue;" class="btn btn-default" id="bottoneConferma">
+                          <i style="color:white;" class="glyphicon glyphicon-search"></i>
+                        </button>
+                      </div>   
+                    </div>
+                  </div>
+                  <button style="margin-left: 70px;" class="btn btn-danger" type="reset" id="btnAnnulla1">X</button>     
+                </div>
+              </div>
+            </div>
+           
+            <div class="container" id="Contenitore" style="margin-left:-3px;">
+             <div style="width: 500px; margin-left: -446px; " class="panel panel-info" id="pannelloMeteo">
+                <div class="panel-heading" id="panelHeading"><h3 id="titolo"><b> Forecast</b></h3></div>
+                <div class="panel-body" id="panelBody">
+                  <label class="control-label col-md-4">Select a data/time:</label>
+                  <div class="col-md-6">
+                    <input class="form-control" type="datetime-local" id="dateTime"/>
+                  </div>
+                  <div id="tabellaForecast">
+                     
+                  </div>
+                  
+                  
+                 </div>
+                 <div class="panel-footer" id ="panelFooter">
+                   <div style="margin-left: 70px;" class="col-md-2">
+                    <div style="width: 225px;" class="input-group">
+                      <input type="text" class="form-control" id="cittaForecast" placeholder="Location search by name">
+                      <div class="input-group-btn">
+                        <button style="background-color:deepskyblue;" class="btn btn-default" id="cercaForecast">
+                          <i style="color:white;" class="glyphicon glyphicon-search"></i>
+                        </button>
+                      </div>   
+                    </div>
+                  </div>
+                  <button style="margin-left: 70px;" class="btn btn-danger" type="reset" id="btnAnnulla2">X</button>     
+                </div>
+              </div>
+            </div>
+         </div>
+       </center>
+         
+
+     </div>
+    
+   
+    
+    <footer class="footer">
+      <p>Copiright</p>
+    </footer>
+
+   <script type="text/javascript" src="controller.js"></script>
+  
+  </body>
+</html>
